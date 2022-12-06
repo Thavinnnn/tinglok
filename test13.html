@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="test13.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container1">
+        <div class="menu">
+            <ul>
+                <li id="btnMenu"><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+            </ul>
+            <div class="ch-color">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun active-color"></i>
+            </div>
+            <div class="login">
+                <i class="fas fa-user"></i> Register & Login
+            </div>
+        </div>
+        <div class="popMenu">
+            <ul>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <div class="left-menu">
+            <ul>
+                <li>
+                    <a class="drop">Apple <i class="fas fa-chevron-right"></i></i></a>
+                    <div class="subMenu">
+                        <ul>
+                            <li><a><i class="fas fa-mobile"></i>iPhone</a></li>
+                            <li><a><i class="fas fa-desktop"></i>iMac</a></li>
+                            <li><a>iWatch</a></li>
+                            <li><a><i class="fas fa-tablet"></i>iPad</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a class="drop">Google <i class="fas fa-chevron-right"></i></a>
+                    <div class="subMenu">
+                        <ul>
+                            <li><a><i class="fab fa-google"></i>Google</a></li>
+                            <li><a><i class="fab fa-youtube"></i>Youtube</a></li>
+                            <li><a><i class="fab fa-google-drive"></i>Drive</a></li>
+                            <li><a><i class="fab fa-google-play"></i>Play store</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a>Microsoft <i class="fas fa-chevron-right"></i></a>
+                </li>
+                <li>
+                    <a>Meta <i class="fas fa-chevron-right"></i></a>
+                </li>
+            </ul>
+        </div>
+        <div class="right-slide">
+            <div class="slide-box">
+                <div class="slide" style="background-image:url(Img/1.jpeg);"></div>
+                <div class="slide" style="background-image:url(Img/2.webp);"></div>
+                <div class="slide" style="background-image:url(Img/3.jfif);"></div>
+                <div class="slide" style="background-image:url(Img/4.jpg);"></div>
+                <div class="slide" style="background-image:url(Img/5.jpg);"></div>
+
+                <div class="btn btn-prev">
+                    <i class="fas fa-chevron-left"></i>
+                </div>
+                <div class="btn btn-next">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+                <div class="paginition">
+                    <ul>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="onscroll">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+    <div class="popup-form">
+        <div class="show-form">
+            <div class="btn-click">
+                <h2 class="btn-1 active-bg">Register</h2>
+                <h2 class="btn-2">Login</h2>
+            </div>
+            <div class="header">
+                <h2 id="h1">Register Form</h2>
+                <h2 id="h2">Login Form</h2>
+            </div>
+            <form class="form register-frm">
+                <div class="form-group">
+                    <label for="">Username</label>
+                    <input type="text" placeholder="Your Name">
+                </div>
+                <div class="form-group">
+                    <label for="">Email</label>
+                    <input type="text" placeholder="Your Name">
+                </div>
+                <div class="form-group">
+                    <label for="">Password</label>
+                    <input type="text" placeholder="Your Name">
+                </div>
+                <div class="form-group">
+                    <label for="">Confirm Password</label>
+                    <input type="text" placeholder="Your Name">
+                </div>
+                <button class="button">
+                     <span>Register</span>
+                </button>
+            </form>
+            <form class="form login-frm">
+                <div class="form-group">
+                    <label for="">Emial</label>
+                    <input type="email" name="email" id="" placeholder="Your Email">
+                </div>
+                <div class="form-group">
+                    <label for="">Password</label>
+                    <input type="password" name="pass" id="" placeholder="Your Email">
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" name="" id=""> Remember me
+                </div>
+                <button class="button">
+                    <i class="fa-sharp fa-solid fa-share"></i>Login
+                </button>
+                <div class="forget">
+                    <a href="#">Forget Password?</a>
+                </div>
+                <div class="new-acc">
+                    <p>New Here?</p>
+                    <a href="#">Join Us</a>
+                </div>
+            </form>
+        </div>
+        <div class="btnClose">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+    </div>
+</body>
+<script src="jquery-3.6.1.js"></script>
+<script src="app.js"></script>
+</html>

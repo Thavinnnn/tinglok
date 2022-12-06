@@ -1,0 +1,356 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    height: 400vh;
+}
+a{
+    text-decoration: none;
+    font-family: arial;
+}
+.container1{
+    width: 100%;
+    background-color: red;
+    float: left;
+}
+.menu{
+    width: 80%;
+    position: relative;
+    margin: auto;
+}
+.menu ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.menu ul li{
+    float: left;
+    position: relative;
+}
+.menu ul li a{
+    text-decoration: none;
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    font-size: 20px;
+}
+.menu ul li a:hover{
+    background-color: tomato;
+}
+.popMenu{
+    width: 280px;
+    height: 100%;
+    position: fixed;
+    transition: 0.7s;
+    top: 0;
+    z-index: 1;
+    left: -285px;
+    background-color: darkgreen;
+}
+.popMenu ul{
+    display: block;
+    list-style: none;
+}
+.popMenu ul li a{
+    font-size: 16px;
+    color: white;
+    padding: 20px;
+    display: block;
+    border-bottom: 1px solid #000;
+}
+.popMenu ul li a:hover{
+    background-color: tomato;
+}
+.popup{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0,0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.sub-menu{
+    width: 250px;
+    z-index: 1;
+    background-color: cornflowerblue;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    visibility: hidden;
+}
+.sub-menu ul{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.menu ul li:hover .sub-menu{
+    visibility: visible;
+}
+.container{
+    display: flex;
+    width: 80%;
+    margin-left: 10%;
+    justify-content: space-between;
+}
+.left-menu{
+    margin-top: 10px;
+    border: 2px solid #000;
+    width: 20%;
+    background-color: #eee;
+}
+.left-menu ul{
+    list-style-type: none;
+    margin: 0;
+}
+.left-menu ul li a{
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    display: block;
+    padding: 10px;
+    border-bottom: 1px solid #000;
+    cursor: pointer;
+}
+.left-menu ul li a:hover{
+    background-color: rgb(0,0,0,0.5);
+}
+.left-menu ul li a i{
+    float: right;
+    transition: 0.5s;
+}
+.left-menu ul li .subMenu{
+    width: 90%;
+    margin-left: 5%;
+    display: block;
+    background-color: #eee;
+    display: none;
+}
+.left-menu ul li i{
+    font-size: 14px;
+}
+.rotate{
+    transform: rotate(90deg);
+    
+}
+.container .right-slide{
+    width: 79%;
+    margin-top: 10px;
+}
+.right-slide .slide-box{
+    width: 100%;
+    height: 400px;
+    background-color: #eee;
+    position: relative;
+    overflow: hidden;
+}
+.right-slide .slide-box .slide{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    background-color: red;
+}
+.right-slide .slide-box .btn{
+    position: absolute;
+    padding: 20px 15px;
+    transition: 0.5s;
+    float: left;
+    top: 50%;
+    transform: translate(0,-50%);
+    font-size: 20px;
+    color: white;
+    background-color: rgba(0, 0, 0,0.2);
+}
+.btn-prev{
+    left: -50px;
+}
+.btn-next{
+    right: -50px;
+}
+.right-slide .slide-box:hover .btn-prev{
+    left: 0;
+}
+.right-slide .slide-box:hover .btn-next{
+    right: 0;
+}
+.right-slide .slide-box .paginition{
+    position: absolute;
+    left: 50%;
+    bottom: 5px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0,0.2);
+    transform: translate(-50%,0);
+}
+.right-slide .slide-box .paginition ul{
+    list-style: none;
+    display: flex;
+}
+.right-slide .slide-box .paginition ul li{
+    background-color: white;
+    border-radius: 50%;
+    padding: 5px;
+    font-size: 8px;
+    cursor: pointer;
+    margin: 5px 10px;
+}
+.active{
+    background-color: orangered !important;
+    color: #eee;
+}
+.ch-color{
+    font-size: 20px;
+    cursor: pointer;
+    position: absolute;
+    background-color: #000;
+    top: 10px;
+    color: #eee;
+    width: 70px;
+    border-radius: 5px;
+    right: 200px;
+    height: 30px;
+    overflow: hidden;
+}
+.ch-color i{
+    float: left;
+    transition: 0.7s;
+    width: 50%;
+    text-align: center;
+    line-height: 30px;
+}
+.active-color{
+    background-color: white;
+    color: black;
+    display: block;
+}
+.onscroll{
+    font-size: 30px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #000;
+    color: white;
+    padding:10px;
+    border-radius: 50%;
+}
+.login{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    border-radius: 7px;
+    cursor: pointer;
+    background-color: #000;
+    padding: 17px;
+    color: white;
+}
+.popup-form{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    height: 100vh;
+    background-color: rgba(0, 0, 0,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.popup-form .show-form{
+    width: 500px;
+    background-color: #eee;
+    overflow: hidden;
+}
+.popup-form .show-form .btn-click{
+    width: 100%;
+    display: flex;
+    cursor: pointer;
+    border-bottom: 2px solid #000;
+    background-color: white;
+}
+.popup-form .show-form .btn-click h2{
+    width: 50%;
+    padding: 10px;
+    color: #4863a0;
+    text-align: center;
+}
+.active-bg{
+    background-color: #4863a0;
+    color: white !important;
+}
+.popup-form .show-form .header{
+    padding: 20px 40px;
+}
+.popup-form .show-form .header h2{
+    text-align: center;
+}
+.popup-form .show-form .header h2#h2{
+    display: none;
+}
+.popup-form .show-form .form{
+    padding: 20px 40px;
+}
+.popup-form .show-form .form .form-group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+.popup-form .show-form .form .form-group label{
+    margin-bottom: 15px;
+}
+.popup-form .show-form .form .form-group input{
+    padding: 10px 20px;
+    border-radius: 6px;
+    outline: 0;
+    border: 2px solid #3d3c3a;
+}
+.popup-form .show-form .form .form-group input:focus{
+    border-color: #837e7c;
+}
+.popup-form .show-form .form .button{
+    width: 50%;
+    display: flex;
+    margin: auto;
+    padding: 14px;
+    justify-content: center;
+    border: none;
+    background-color: #50c878;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+.popup-form .show-form .form .button span{
+    color: white;
+    font-size: 19px;
+}
+.popup-form .show-form .form .button:hover{
+    background-color: #38a35c;
+}
+.popup-form .btnClose{
+    position: absolute;
+    right: 270px;
+    font-size: 32px;
+    top: 55px;
+    color: white;
+    cursor: pointer;
+}
+.login-frm{
+    display: none;
+}
+.popup-form .show-form .form .forget{
+    margin-top: 15px;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid #eee;
+}
+.popup-form .show-form .form .new-acc{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+.popup-form .show-form .form .new-acc p{
+    color: black;
+}
